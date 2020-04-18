@@ -1,0 +1,220 @@
+/* thiết lập chiều cao cho các phần tử html và body */
+
+html,
+body {
+    height: 100%;
+}
+
+#footer-custom {
+    position: absolute;
+    bottom: 0;
+}
+
+.Company-Detail {
+    padding: 10px 0 10px 0;
+    color: rgb(148, 205, 228);
+}
+
+.topnav {
+    padding: 10px 0 10px 5px;
+    font-size: 120%;
+    font-weight: 500;
+    display: block;
+}
+
+.style-bg-img {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    align-items: center;
+}
+
+.zigzag {
+    padding-top: 40px;
+}
+
+#bg-img-doanh-nghiep1 {
+    background-image: url("https://vtiacademy.edu.vn/vti_academy_website/static/src/img/business-content-01.png");
+}
+
+#bg-img-doanh-nghiep2 {
+    background-image: url("https://vtiacademy.edu.vn/vti_academy_website/static/src/img/business-content-02.png");
+}
+
+#bg-img-doanh-nghiep3 {
+    background-image: url("https://vtiacademy.edu.vn/vti_academy_website/static/src/img/business-content-03.png");
+}
+
+#bg-img-about-vti1 {
+    background-image: url("https://vtiacademy.edu.vn/vti_academy_website/static/src/img/Slider-final-01.jpg");
+}
+
+#bg-img-about-vti2 {
+    background-image: url("https://vtiacademy.edu.vn/vti_academy_website/static/src/img/Slider-final-03.jpg");
+}
+
+#bg-img-about-vti3 {
+    background-image: url("https://vtiacademy.edu.vn/vti_academy_website/static/src/img/Slider2-1-02.jpg");
+}
+
+.content-zigzag {
+    margin-top: 100px;
+    height: auto;
+    background-color: #ffffff;
+}
+
+
+/* 1/2 column  */
+
+.column-50-left {
+    float: left;
+    width: 50%;
+    height: 360px;
+    padding: 20px;
+}
+
+.column-50-right {
+    float: right;
+    width: 50%;
+    height: 360px;
+    padding: 20px;
+}
+
+
+/*Custom lại 1 vài thuộc tính trong menu top */
+
+@media only all {
+    .nav-link:hover {
+        color: rgb(161, 7, 7) !important;
+    }
+    .nav-link.disabled {
+        color: slategray;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .nav-link.active {
+        color: black;
+    }
+    .nav-link {
+        color: darkgray;
+    }
+    .navbar {
+        padding: 22px;
+    }
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+
+/* 
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+} */
+
+.TieuDeLon>p {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/**/
+
+.TieuDeLon>p::after {
+    content: "_______";
+    display: block;
+    color: orangered;
+}
+
+
+/*
+Tạo nội dung theo phong cách Zig zag 
+*/
+
+.about_header_bg {
+    /*Ảnh nền đầu trang */
+    background-image: url("http://vtiacademy.edu.vn/vti_academy_website/static/src/img/about_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_header {
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+@media (max-width: 1333px) {
+    .about_header {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_header {
+        padding: 40px 0;
+    }
+}
+
+.about_header>p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0;
+}
+
+@media (max-width: 1333px) {
+    .about_header>p {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_header>p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about_header>p {
+        font-size: 16px;
+    }
+}
+
+.about_header_content {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 12px 0;
+}
+
+@media (max-width: 1333px) {
+    .about_header_content {
+        font-size: 16px;
+        padding: 20px 12px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_header_content {
+        font-size: 16px;
+    }
+}
