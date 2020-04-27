@@ -11,6 +11,7 @@
 
 .navbar li a {
     color: rgba(82,64,120,0.9);
+   
 }
 
 .navbar li a:hover {
@@ -47,26 +48,23 @@
     height: 80px;
 }
 
-.welcome hr {
-	border-top: 2px solid ;
-	width: 95%;	
-	margin-bottom: 2rem;
-    margin-top: 2rem;
+
+
+input[type=text]{
+    background-color: rgb(240,240,240);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    width: 200px;
+    padding-left: 10px;
+    margin-left: 10px;
 }
 
-.clMain1 {
-    height:  10px;
-}
-
-
-#container4 {
-    height: 300px;
-    width: 100%;
-    opacity: 0.6;
-}
-
-#container4 .content4 {
-    color: red;
+footer {
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-wrap {
@@ -85,5 +83,3 @@
 .title-footer {
     display: inline-block !important;
 }
-
-
