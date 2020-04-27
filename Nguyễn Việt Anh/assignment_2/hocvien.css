@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.navbar-fixed-top {
+  opacity: .6;
+}
+.row1 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #8080ff;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.form-control {
+  display: inline;
+  margin-top: 5px;
+  height: 25px;
+  width: 200px;
+}
+ .btn {
+   padding: 0px;
+   border-radius: 5px !important;
+   border-style: hidden;
+ }
+ .sect1 {
+   margin-top: 4%;
+   margin-bottom: 2%;
+ }
+ .row2 {
+   height: 110px;
+   border-bottom: 3px solid blue;
+ }
+ .navbar {
+   border-style: hidden;
+   background-color: white;
+   margin-top: 2%;
+ }
+
+ .navbar h4 {
+   color: #7c9fb0;
+   border-bottom: 2px solid #7c9fb0;
+ }
+.sect3 {
+  max-width: 100%;
+  height: 650px;
+  background-image: url('cap.jpg');
+  background-size: cover;
+  margin: 20px;
+  margin-top: 220px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 45px;
+}
+
+h1:after {
+ content: "";
+ display: block;
+ margin: 0 auto;
+ margin-top: 10px;
+ padding-top: 17px;
+ width: 200px;
+ border-top: 3px solid red;
+}
+.sect5 {
+  max-width: 100%;
+  height: 650px;
+  background-image: url('passport.jpg');
+  background-size: cover;
+  margin: 20px;
+  margin-top: 235px;
+}
+.goto {
+  max-width: 100%;
+  height: 400px;
+  background-image: url('lotrinh.png');
+  background-size: cover;
+}
+.manager {
+  max-width: 100%;
+  height: 400px;
+  background-image: url('manager.png');
+  background-size: cover;
+}
+.salary {
+  max-width: 100%;
+  height: 400px;
+  background-image: url('salary.jpg');
+  background-size: cover;
+}
+
+div.gallery {
+  margin: 23px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.galery {
+  display: inline-block;
+}
+
+.video {
+  margin-bottom: 100px;
+}
+
+
+.footer {
+  display: inline-block;
+  background-color: #e6ffff;
+}
+.row8 {
+  display: inline-block;
+  border-top: 2px solid blue;
+}

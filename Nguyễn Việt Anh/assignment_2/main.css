@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+a {
+  text-decoration: none;
+}
+
+.row1 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #8080ff;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.row2 {
+  height: 110px;
+  border-bottom: 3px solid blue;
+}
+
+.row2 h4 {
+  color: #7c9fb0;
+  border-bottom: 2px solid #7c9fb0;
+}
+
+.form-control {
+  display: inline;
+  margin-top: 5px;
+  height: 25px;
+  width: 200px;
+}
+
+ .btn {
+  margin: 3px;
+  border-radius: 5px !important;
+  border-style: hidden;
+ }
+
+.btn-group {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.carousel-inner img {
+  width: 100%;
+}
+
+ h1 {
+   text-align: center;
+   margin-top: 2%;
+   margin-bottom: 1%;
+   font-family: 'Oswald', sans-serif;
+   font-size: 45px;
+ }
+
+.row5 {
+  margin-top: 1%;
+}
+
+.row5 h1:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  padding-top: 17px;
+  width: 200px;
+  border-top: 3px solid red;
+}
+
+.row4 {
+  margin-top: 20%;
+  margin-bottom: 52%;
+}
+
+.row3 {
+  margin-top: 9%;
+}
+
+div.gallery {
+  margin: 5px;
+  padding: 3px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 439px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 430px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.desc {
+  font-size: 25px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="demoQLNV.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Demo</title>
+</head>
+<body>
+    <section>
+        <h3>Quản Lý Nhân Viên</h3>
+    </section>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Họ và tên</th>
+            <th scope="col">Kho  / Phòng ban</th>
+            <th scope="col">Trình độ / Chức vụ</th>
+            <th scope="col">Phụ cấp</th>
+            <th scope="col">Số tiết dạy / Ngày công</th>
+            <th scope="col">Tổng lương</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">0</th>
+            <td>Pham Hai</td>
+            <td>Toán</td>
+            <td>Cử Nhân</td>
+            <td>2000</td>
+            <td>2</td>
+            <td>7000000</td>
+          </tr>
+          <tr>
+            <th scope="row">0</th>
+            <td>Dang Huong</td>
+            <td>Đào Tạo</td>
+            <td>Nhân Viên</td>
+            <td>2000</td>
+            <td>3</td>
+            <td>6000000</td>
+          </tr>
+          <tr>
+            <th scope="row">0</th>
+            <td>Hoang Viet Thang</td>
+            <td>Lý</td>
+            <td>Cử Nhân</td>
+            <td>2000</td>
+            <td>3</td>
+            <td>5000000</td>
+          </tr>
+          <tr>
+            <th scope="row">0</th>
+            <td>Nguyen Trung Kien</td>
+            <td>Đào Tạo</td>
+            <td>Phó PHòng</td>
+            <td>2000</td>
+            <td>4</td>
+            <td>9000000</td>
+          </tr>
+          <tr>
+            <th scope="row">0</th>
+            <td>Trần Thục Quyên</td>
+            <td>Đào Tạo</td>
+            <td>Trưởng PHòng</td>
+            <td>2000</td>
+            <td>4</td>
+            <td>1000000</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Tên nhân viên</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Nhập vào tên nhân viên..." aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="group-btn">
+        <button type="button" class="btn btn-dark">Load Data</button>
+        <button type="button" class="btn btn-dark">Thêm nhân viên</button>
+        <button type="button" class="btn btn-dark">Sắp xếp</button>
+      </div>
+</body>
+</html>
