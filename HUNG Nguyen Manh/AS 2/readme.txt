@@ -1,2 +1,0 @@
-Trang chủ
-Liên hệ
