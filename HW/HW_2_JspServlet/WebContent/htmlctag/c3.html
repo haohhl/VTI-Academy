@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>&lt;p&gt;Your income is : &lt;c:out value=&quot;${income}&quot;/&gt;&lt;/p&gt; </p>
+<p>&lt;c:choose&gt; &nbsp;</p>
+<p>&nbsp; &nbsp; &lt;c:when test=&quot;${income &lt;= 1000}&quot;&gt; &nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;Income is not good. &nbsp;</p>
+<p>&nbsp; &nbsp; &lt;/c:when&gt; &nbsp;</p>
+<p>&nbsp; &nbsp; &lt;c:when test=&quot;${income &gt; 10000}&quot;&gt; &nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Income is very good. &nbsp;</p>
+<p>&nbsp; &nbsp; &lt;/c:when&gt; &nbsp;</p>
+<p>&nbsp; &nbsp; &lt;c:otherwise&gt; &nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;Income is undetermined... &nbsp;</p>
+<p>&nbsp; &nbsp; &lt;/c:otherwise&gt; &nbsp;</p>
+<p>&lt;/c:choose&gt; &nbsp;</p>
+</body>
+</html>
