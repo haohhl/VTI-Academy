@@ -27,6 +27,12 @@ public class StudentServlet extends HttpServlet {
 		
 		// Step 2: get PrintWriter
 		PrintWriter out = response.getWriter();
+		String[] student = {"Tien", "Anh", "Cuong"};
+		request.setAttribute("listStudents", student);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/view-student.jsp");
+		dispatcher.forward(request, response);
+				
+				
 		out.println("<html><body>");
 		out.println("<h1>Student Servlet</h1><hr>");
 		out.println("<p>Student Frist Name is: " + request.getParameter("firstName") + "</p>");
@@ -34,9 +40,9 @@ public class StudentServlet extends HttpServlet {
 		out.println("</body></html>");
 		String x = request.getParameter("firstName");
 		x = x.toUpperCase();
-		RequestDispatcher view = request.getRequestDispatcher("/Demo.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("/view-student.jsp");
 		
-		request.setAttribute("x", x);
+		request.setAttribute("xx", x);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

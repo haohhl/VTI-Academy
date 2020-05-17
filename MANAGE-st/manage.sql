@@ -1,0 +1,18 @@
+-- DROP DATABASE IF EXIT
+DROP DATABASE IF EXISTS manage;
+CREATE DATABASE IF NOT EXISTS manage;
+USE manage;
+
+DROP TABLE IF EXISTS student;
+CREATE TABLE student
+(
+	Id				INT(3) AUTO_INCREMENT PRIMARY KEY,
+    First_Name		NVARCHAR(20) NOT NULL,
+    Last_Name		NVARCHAR(30) NOT NULL,
+    Age				INT(3),
+    Gender			NVARCHAR(5),
+    School			NVARCHAR(40),
+	Phone_Number	NVARCHAR(10),
+	Email			NVARCHAR(30),
+    Address			NVARCHAR(40)
+);
