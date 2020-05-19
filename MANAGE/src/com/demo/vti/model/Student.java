@@ -1,22 +1,28 @@
 package com.demo.vti.model;
 
 public class Student {
-	private String id;
+	private int id;
 	private String firstName;
 	private String lastName;
 	private String email;
 	
-	public Student(String id, String firstName, String lastName, String email) {
+	public Student(String firstName, String lastName, String email) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+	public Student(int id, String firstName, String lastName, String email) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 	}
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getFirstName() {

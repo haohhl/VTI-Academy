@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
@@ -20,10 +20,11 @@
 	<div style="text-align: center">
 		<h1>LIST STUDENT</h1>
 	</div>
-	
-	<form action="InsertStudent.jsp">	
-		<input type="submit" class="btn btn-info" name="submit" value="New student"/>
+
+	<form action="AddStudent.jsp" class="container text-left">
+		<input type="submit" name="submit" value="Add New Student"/>
 	</form><br>
+	<a href="<%=request.getContextPath()%>/list" class="nav-link"></a>
 	<table class="table table-bordered table-hover">
 		<thead>
 			<tr class="thead-dark" style="text-align: center">
