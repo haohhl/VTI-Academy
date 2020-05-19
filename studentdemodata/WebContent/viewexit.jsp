@@ -9,14 +9,15 @@
 </head>
 <body>
 
+	<h4>Edit Data</h4>
 	<form action="update" method="get">
-		<input type="hidden" name="id" value="<c:out value="${IDStudent}" />" />
+		<input type="hidden" name="id" value="${IDStudent}" />
 		<br> <label>FirstName</label> 
-		<input type="text" name="firstName" value="<c:out value="${firstNameStudent}"/>" /> <br> 
+		<input type="text" name="firstName" value="${firstNameStudent}"/> <br> 
 		<label>LastName</label>
-		<input type="text" name="lastName" value="<c:out value="${lastNameStudent}" />" /> <br>
+		<input type="text" name="lastName" value="${lastNameStudent}" /> <br>
 		<label>Email</label>
-		<input type="text" name="email" value="<c:out value="${emailStudent}"/>" /> <br>
+		<input type="text" name="email" value="${emailStudent}"/> <br>
 		<button type="submit">Submit</button>
 	</form>
 

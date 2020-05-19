@@ -45,38 +45,34 @@ public class exitSt extends HttpServlet {
 			Connection myConn = null;
 			PreparedStatement myPre = null;
 			ResultSet myRes = null;
-			
+
 			myConn = dataSource.getConnection();
 			int id = Integer.parseInt(request.getParameter("id"));
-			
+
 			HttpSession session = request.getSession();
-			
-			Object idSt = id;		
+
+			Object idSt = id;
 			Object firstNameSt = null;
 			Object lastNameSt = null;
 			Object emailSt = null;
-			
-			
+
 			String select = "SELECT  first_name, last_name, email  FROM student WHERE id = ? ";
-			
-			
-			
+
 			myPre = myConn.prepareStatement(select);
 			myPre.setInt(1, id);
-			
-			myRes = myPre.executeQuery();
 
-			while (myRes.next()) {
+			myRes = myPre.executeQuery();
+			while(myRes.next()) {
 				firstNameSt = myRes.getString("first_name");
 				lastNameSt = myRes.getString("last_name");
 				emailSt = myRes.getString("email");
-			}	
+			}
 			
-			session.setAttribute("IDStudent", idSt );
-			session.setAttribute("firstNameStudent", firstNameSt );
-			session.setAttribute("lastNameStudent", lastNameSt );
-			session.setAttribute("emailStudent", emailSt );
-			
+
+			session.setAttribute("IDStudent", idSt);
+			session.setAttribute("firstNameStudent", firstNameSt);
+			session.setAttribute("lastNameStudent", lastNameSt);
+			session.setAttribute("emailStudent", emailSt);
 
 		} catch (SQLException e) {
 

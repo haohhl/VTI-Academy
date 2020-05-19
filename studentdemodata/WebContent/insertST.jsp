@@ -8,6 +8,7 @@
 <title>Insert Data</title>
 </head>
 <body>
+<h4>Insert Data</h4>
 	<form action="addSt" method="post">
 		<br> <label>FirstName</label> 
 		<input type="text" name="firstName" /> <br>
