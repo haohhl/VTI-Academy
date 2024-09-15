@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+.h4Infor {
+	margin: 30px 0px 15px 0px;
+}
+
+body {
+	margin: 10px 200px 100px 100px;
+}
+
+.underText {
+	color: gray;
+}
+
+.form-group {
+	margin : 10px 25px 0px 0px;
+}
+
+#formAddress {
+	width: 388px;
+}
+
+#selectCountry {
+	border-color: rgb(200, 200, 200);
+	padding: 4px 48px;
+}
+
+#comment {
+	width: 385px;
+}
+
+#h3Footer {
+	text-align: center;
+}
+
+#submitButon {
+	margin: 20px;
+}
